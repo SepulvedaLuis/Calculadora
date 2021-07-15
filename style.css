@@ -32,10 +32,22 @@ header {
     height: 10rem;
     background-color: #c2c2;
 }
+.numeros {
+    margin: auto;
+    width: 50%;
+    height: 50rem;
+}
 .numbers {
     width: 7rem;
     height: 7rem;
-    
+}
+.operator {
+    width: 7.5rem;
+    height: 50rem;
+}
+.operadores {
+    width: 7rem;
+    height: 7rem;
 }
 footer {
     margin-top: 2rem;
