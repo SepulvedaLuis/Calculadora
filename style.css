@@ -18,13 +18,7 @@ header {
     height: 50rem;
     margin: auto;
     background-color: #c6c6c6c6;
-}
-.items {
-    display: flex;
-    margin: auto;
-    width: 90%;
-    height: 80%;
-    background-color: #b6b6b6b6;
+    border-radius: 1rem;
 }
 .resultado {
     margin: auto;
@@ -32,22 +26,61 @@ header {
     height: 10rem;
     background-color: #c2c2;
 }
-.numeros {
+.items {
+    display: flex;
+    justify-content: center;
     margin: auto;
-    width: 50%;
-    height: 50rem;
+    width: 90%;
+    height: 80%;
+    background-color: #b6b6b6b6;
 }
 .numbers {
+    /* display: flex; */
+    width: 22rem;
+    height: 40rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.numeros {
+    border-radius: 1rem;
+    font-size: 1.8rem;
     width: 7rem;
     height: 7rem;
+    background-color: #f0ffff;
 }
 .operator {
-    width: 7.5rem;
-    height: 50rem;
+    width: 20%;
+    height: 40rem;
 }
 .operadores {
+    /* width: 6rem;
+    height: 5rem; */
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    background-color: #00ffff;
+}
+.especial {
+    width: 100%;
+    display: flex;
+}
+.especial #zero {
+    width: 14.2rem;
+    margin-right: .4rem;
+}
+.especial .operadores {
     width: 7rem;
     height: 7rem;
+    margin-right: .4rem;
+}
+.operator .operadores {
+    width: 7rem;
+    height: 7rem;
+}
+.operator #suma {
+    height: 14rem;
+}
+.operator #igual {
+    height: 14rem;
 }
 footer {
     margin-top: 2rem;
