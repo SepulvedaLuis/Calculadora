@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Definimos nuestros estandares generales en tamaño y margenes de nuestro contenido */
+html {
+    font-size: 62.5%; 
+}
+header {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.container {
+    width: 60rem;
+    height: 50rem;
+    margin: auto;
+    background-color: #c6c6c6c6;
+}
+.items {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    background-color: #b6b6b6b6;
+}
+.resultado {
+    margin: auto;
+    width: 90%;
+    height: 10rem;
+    background-color: #c2c2;
+}
+.numbers {
+    width: 7rem;
+    height: 7rem;
+    
+}
+footer {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
