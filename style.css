@@ -14,17 +14,36 @@ header {
     text-align: center;
 }
 .container {
-    width: 60rem;
+    width: 40rem;
     height: 50rem;
     margin: auto;
-    background-color: #c6c6c6c6;
+    /* background-color: #c6c6c6c6; */
     border-radius: 1rem;
 }
 .resultado {
     margin: auto;
     width: 90%;
     height: 10rem;
-    background-color: #c2c2;
+    padding-top: .5rem;
+    background-color: #b6b6b6;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top: solid .2rem black;
+    border-right: solid .2rem black;
+    border-left: solid .2rem black;
+}
+#resultado {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+    width: 30rem;
+    height: 8.5rem;
+    line-height: 100px;
+    background-color: white;
+    border-radius: 2.5rem;
+    overflow-y: scroll;
+    border: solid .1rem grey;
 }
 .items {
     display: flex;
@@ -33,9 +52,13 @@ header {
     width: 90%;
     height: 80%;
     background-color: #b6b6b6b6;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: solid .2rem black;
 }
 .numbers {
     /* display: flex; */
+    margin-top: 2rem;
     width: 22rem;
     height: 40rem;
     /* justify-content: center; */
@@ -43,12 +66,13 @@ header {
 }
 .numeros {
     border-radius: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     width: 7rem;
     height: 7rem;
     background-color: #f0ffff;
 }
 .operator {
+    margin-top: 2rem;
     width: 20%;
     height: 40rem;
 }
@@ -56,7 +80,7 @@ header {
     /* width: 6rem;
     height: 5rem; */
     border-radius: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     background-color: #00ffff;
 }
 .especial {
