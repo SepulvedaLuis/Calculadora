@@ -13,25 +13,27 @@ header {
     margin-bottom: 3rem;
     text-align: center;
 }
+/*Contenedor de toda la calculadora*/
 .container {
     width: 40rem;
     height: 50rem;
     margin: auto;
     /* background-color: #c6c6c6c6; */
-    border-radius: 1rem;
 }
+/*Contenedor del recuadro donde estará graficamente el resultado*/
 .resultado {
     margin: auto;
     width: 90%;
     height: 10rem;
     padding-top: .5rem;
     background-color: #b6b6b6;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
     border-top: solid .2rem black;
     border-right: solid .2rem black;
     border-left: solid .2rem black;
 }
+/*Recuadro interior para ver las operaciones y el resultado*/
 #resultado {
     display: block;
     text-align: center;
@@ -39,12 +41,13 @@ header {
     margin: auto;
     width: 30rem;
     height: 8.5rem;
-    line-height: 100px;
+    line-height: 10rem;
     background-color: white;
     border-radius: 2.5rem;
     overflow-y: scroll;
     border: solid .1rem grey;
 }
+/*Contenedor de los botones de la calculadora*/
 .items {
     display: flex;
     justify-content: center;
@@ -52,10 +55,11 @@ header {
     width: 90%;
     height: 80%;
     background-color: #b6b6b6b6;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
     border: solid .2rem black;
 }
+/*Contenedor de los botones que contiene números especialmente*/
 .numbers {
     /* display: flex; */
     margin-top: 2rem;
@@ -64,6 +68,7 @@ header {
     /* justify-content: center; */
     /* align-items: center; */
 }
+/*Propiedades de los botones de los números*/
 .numeros {
     border-radius: 1rem;
     font-size: 2rem;
@@ -71,38 +76,43 @@ header {
     height: 7rem;
     background-color: #f0ffff;
 }
+/*Contenedor de las operaciones en la derecha del recuadro*/
 .operator {
     margin-top: 2rem;
     width: 20%;
     height: 40rem;
 }
+/*Propiedades de los botones de operaciones en general*/
 .operadores {
     /* width: 6rem;
     height: 5rem; */
+    width: 7rem;
+    height: 7rem;
     border-radius: 1rem;
     font-size: 2rem;
     background-color: #00ffff;
 }
+/*Contenedor especial para organizar el numero cero*/
 .especial {
     width: 100%;
     display: flex;
 }
+/*Propiedades del número cero*/
 .especial #zero {
     width: 14.2rem;
     margin-right: .4rem;
 }
+/*Operadores que se encuentran mezclados en el contenedor de números*/
 .especial .operadores {
     width: 7rem;
     height: 7rem;
     margin-right: .4rem;
 }
-.operator .operadores {
-    width: 7rem;
-    height: 7rem;
-}
+/*Propiedades especiales de la suma*/
 .operator #suma {
     height: 14rem;
 }
+/*Propiedades especiales del igual*/
 .operator #igual {
     height: 14rem;
 }
