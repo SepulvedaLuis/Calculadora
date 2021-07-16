@@ -12,12 +12,17 @@
         <h1>Vamos hacer nuestra primera calculadora</h1>
     </header>
     <main>
+        <!-- Comenzamos realizando el contenedor de nuestra calculadora -->
         <div class="container">
+            <!--Contenedor del valor de resultado-->
             <div class="resultado">
                 <span id="resultado"></span>
             </div>
+            <!--Contenedor para los botones de la calculadora-->
             <div class="items">
+                <!--Contenedor para los números-->
                 <div class="numbers">
+                    <!--Contenedor especial en el cual ponemos valores de botones de operación-->
                     <div class="especial">
                         <button class="operadores" id="reset">C</button>
                         <button class="operadores" id="division">/</button>
@@ -32,11 +37,13 @@
                     <button class="numeros" id="uno">1</button>
                     <button class="numeros" id="dos">2</button>
                     <button class="numeros" id="tres">3</button>
+                    <!--Contenedor para poder organizar nuestro número cero y su acompañante-->
                     <div class="especial">
                         <button class="numeros" id="zero">0</button>
                         <button class="numeros" id="punto">.</button>
                     </div>
                 </div>
+                <!--Contenedor para los operadores de la parte derecha-->
                 <div class="operator">
                     <button class="operadores" id="restar">-</button>
                     <button class="operadores" id="suma">+</button>
