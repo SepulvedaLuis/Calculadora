@@ -13,6 +13,9 @@ header {
     margin-bottom: 3rem;
     text-align: center;
 }
+main {
+    background: linear-gradient(#f0ffff, #c6c6c6c6);
+}
 /*Contenedor de toda la calculadora*/
 .container {
     width: 40rem;
@@ -98,7 +101,7 @@ header {
     display: flex;
 }
 /*Propiedades del número cero*/
-.especial #zero {
+.especial #cero {
     width: 14.2rem;
     margin-right: .4rem;
 }
@@ -109,7 +112,7 @@ header {
     margin-right: .4rem;
 }
 /*Propiedades especiales de la suma*/
-.operator #suma {
+.operator #sumar {
     height: 14rem;
 }
 /*Propiedades especiales del igual*/
@@ -120,4 +123,18 @@ footer {
     margin-top: 2rem;
     font-size: 2rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2.2rem;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        height: 50rem;
+        margin: auto;
+    }
 }
