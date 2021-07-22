@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./calculator.js" defer></script>
 </head>
-<body>
+<body onload="init();">
     <header>
         <h1>Vamos hacer nuestra primera calculadora</h1>
     </header>
@@ -26,27 +27,27 @@
                     <div class="especial">
                         <button class="operadores" id="reset">C</button>
                         <button class="operadores" id="division">/</button>
-                        <button class="operadores" id="multiplicacion">X</button>
+                        <button class="operadores" id="multiplicar">X</button>
                     </div>
-                    <button class="numeros" id="siete">7</button>
-                    <button class="numeros" id="ocho">8</button>
-                    <button class="numeros" id="nueve">9</button>
-                    <button class="numeros" id="cuatro">4</button>
-                    <button class="numeros" id="cinco">5</button>
-                    <button class="numeros" id="seis">6</button>
-                    <button class="numeros" id="uno">1</button>
-                    <button class="numeros" id="dos">2</button>
-                    <button class="numeros" id="tres">3</button>
+                    <button class="numeros" id="seven">7</button>
+                    <button class="numeros" id="eight">8</button>
+                    <button class="numeros" id="nine">9</button>
+                    <button class="numeros" id="four">4</button>
+                    <button class="numeros" id="five">5</button>
+                    <button class="numeros" id="six">6</button>
+                    <button class="numeros" id="one">1</button>
+                    <button class="numeros" id="two">2</button>
+                    <button class="numeros" id="three">3</button>
                     <!--Contenedor para poder organizar nuestro número cero y su acompañante-->
                     <div class="especial">
-                        <button class="numeros" id="zero">0</button>
+                        <button class="numeros" id="cero">0</button>
                         <button class="numeros" id="punto">.</button>
                     </div>
                 </div>
                 <!--Contenedor para los operadores de la parte derecha-->
                 <div class="operator">
                     <button class="operadores" id="restar">-</button>
-                    <button class="operadores" id="suma">+</button>
+                    <button class="operadores" id="sumar">+</button>
                     <button class="operadores" id="igual">=</button>
                 </div>
             </div>
