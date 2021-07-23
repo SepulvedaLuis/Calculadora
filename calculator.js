@@ -1,3 +1,4 @@
+//Funciones de las operaciones de la calculadora
 function sumar(a, b){
     return a + b;
 }
@@ -17,11 +18,11 @@ function dividir(a, b){
         alert("Division 0, no permitido");
     }
 }
-
+//Variables que guardara los numeros a operar y la operación indicada
 var operandoA, operandoB, operacion;
 
 function init(){
-    //variables
+    //variables que tomaran los valores de cada ID o etiqueta button
     var resultado = document.getElementById("resultado");
     var reset = document.getElementById("reset");
     var suma = document.getElementById("sumar");
@@ -40,7 +41,7 @@ function init(){
     var ocho = document.getElementById("eight");
     var nueve = document.getElementById("nine");
 
-    //manejar eventos
+    //Eventos onclick para saber que número fue seleccionado
     uno.onclick = function(e){
         resultado.textContent = resultado.textContent + "1";
     }
@@ -71,11 +72,11 @@ function init(){
     cero.onclick = function(e){
         resultado.textContent = resultado.textContent + "0";
     }
-
+    //Evento onClick de la tecla borrar la cual llama una función resetear
     reset.onclick = function(e){
         resetear();
     }
-
+    //Eventos onClick según el operador que se sellecione
     suma.onclick = function(e){
         operandoA = resultado.textContent;
         operacion = "+";
@@ -105,6 +106,8 @@ function init(){
     }
 }
 
+//Funciones adicionales que serán para limpiar la pantalla del resultado y la
+//función para resolver según la operación y números almacenados
 function limpiar(){
     resultado.textContent = "";
 }
@@ -115,7 +118,8 @@ function resetear(){
     operandoA = 0;
     operacion = "";
 }
-
+//Contamos con un switch para saber operación vamos hacer y
+//así podemos llamar la operación a realizar de la calculadora
 function resolver(){
     var res = 0;
     switch(operacion){
