@@ -1,17 +1,11 @@
 //Funciones de las operaciones de la calculadora
-function sumar(a, b){
-    return a + b;
-}
+const sumar = (a, b) => a + b;
 
-function resta(a, b){
-    return a - b;
-}
+const resta = (a, b) => a - b;
 
-function multiplicar(a, b){
-    return a * b;
-}
+const multiplicar = (a, b) => a * b;
 
-function dividir(a, b){
+const dividir = (a, b) => {
     if(b !=  0){
         return a / b;
     }else{
@@ -121,7 +115,7 @@ function resetear(){
 //Contamos con un switch para saber operación vamos hacer y
 //así podemos llamar la operación a realizar de la calculadora
 function resolver(){
-    var res = 0;
+    let res = 0;
     switch(operacion){
       case "+":
         res = sumar(parseFloat(operandoA),parseFloat(operandoB));
@@ -139,6 +133,3 @@ function resolver(){
     resetear();
     resultado.textContent = res;
 }
-
-
-
